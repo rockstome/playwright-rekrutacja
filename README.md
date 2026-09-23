@@ -12,13 +12,13 @@ Nie musisz instalować niczego na swoim komputerze (Node.js, Git ani przeglądar
 
 1. Kliknij poniższy przycisk (lub na stronie repozytorium: **Code** ➔ **Codespaces** ➔ **Create codespace on main**):
 
-   [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new)
+   [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/rockstome/playwright-rekrutacja)
 
 2. Po kilku sekundach w przeglądarce otworzy się gotowe środowisko **VS Code w chmurze**. Wszystkie zależności, rozszerzenie Playwright oraz przeglądarka Google Chrome zainstalują się automatycznie!
 
 ### Opcja B: Gitpod
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/rockstome/playwright-rekrutacja)
 
 ---
 
@@ -64,8 +64,8 @@ npm run test:report
 Jeśli wolisz pracować lokalnie na swoim systemie:
 ```bash
 # 1. Klonowanie repozytorium
-git clone <URL_REPO>
-cd <NAZWA_KATALOGU>
+git clone https://github.com/rockstome/playwright-rekrutacja.git
+cd playwright-rekrutacja
 
 # 2. Instalacja zależności
 npm install
