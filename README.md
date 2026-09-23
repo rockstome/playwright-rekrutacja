@@ -57,7 +57,7 @@ npm run test:report
 | **02** | 🟢 Łatwy | `tests/tasks/task02_fix_locator.spec.ts` | **Selektory:** Poprawa niedziałającego selektora na rekomendowany `getByRole`. |
 | **03** | 🟡 Średni | `tests/tasks/task03_fill_form.spec.ts` | **Formularz & UI:** Napisanie kroków dodawania elementów do listy i zaznaczania checkboxa. |
 | **04** | 🟡 Średni | `tests/tasks/task04_dynamic_loading.spec.ts` | **Asynchroniczność:** Obsługa dynamicznego ładowania i opóźnionego pojawiania się elementów w DOM. |
-| **05** | 🟡 Średni | `tests/tasks/task05_pom_methods.spec.ts`<br>+ `src/pages/LoginPage.ts` | **Page Object Model:** Implementacja brakujących metod i lokatorów w klasie `LoginPage`. |
+| **05** | 🟡 Średni | `tests/tasks/task05_pom_methods.spec.ts`<br>+ `src/pages/LoginPage.ts` | **Page Object Model & Parallel:** Implementacja metod w klasie `LoginPage` oraz konfiguracja uruchamiania testów równolegle (`mode: 'parallel'`). |
 | **06** | 🟡 Średni | `tests/tasks/task06_create_page_object.spec.ts`<br>+ `src/pages/CartPage.ts` | **Tworzenie POM:** Zaprojektowanie od podstaw klasy `CartPage` do zarządzania elementami. |
 | **07** | 🟡 Średni | `tests/tasks/task07_api_mocking.spec.ts` | **Mockowanie API:** Przechwycenie zapytania sieciowego (`page.route`) i podmiana odpowiedzi JSON. |
 | **08** | 🟡 Średni | `tests/tasks/task08_api_request.spec.ts` | **Testy API:** Wykonanie bezpośredniego zapytania POST (`request.post`) i walidacja odpowiedzi HTTP/JSON. |
