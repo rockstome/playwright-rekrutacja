@@ -1,0 +1,25 @@
+{
+  "name": "playwright-rekrutacja",
+  "version": "1.0.0",
+  "description": "Playwright TypeScript automated tests configured with Google Chrome branded browser",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report"
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "automation",
+    "chrome"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.13.10",
+    "typescript": "^5.8.2"
+  }
+}
