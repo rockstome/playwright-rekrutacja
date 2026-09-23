@@ -1,7 +1,11 @@
 import { type Page, type Locator, expect } from '@playwright/test';
 
 /**
- * Zadanie 2: Uzupełnij klasę LoginPage zgodnie ze wzorcem Page Object Model (POM).
+ * ============================================================================
+ * KLASA: LoginPage (Wzorzec Page Object Model)
+ * ============================================================================
+ * Twoim zadaniem jest uzupełnienie brakujących lokatorów oraz implementacja
+ * logiki w metodach klasy LoginPage.
  */
 export class LoginPage {
   readonly page: Page;
@@ -12,25 +16,31 @@ export class LoginPage {
 
   constructor(page: Page) {
     this.page = page;
-    // TODO: Zdefiniuj odpowiednie selektory / lokatory
-    this.usernameInput = page.locator('#username');
-    this.passwordInput = page.locator('#password');
-    this.loginButton = page.getByRole('button', { name: /login/i });
-    this.flashMessage = page.locator('#flash');
+
+    // TODO dla kandydata: Zdefiniuj odpowiednie lokatory
+    this.usernameInput = page.locator('#TODO_ZASTAP_PRAWIDLOWYM_SELEKTOREM');
+    this.passwordInput = page.locator('#TODO_ZASTAP_PRAWIDLOWYM_SELEKTOREM');
+    this.loginButton = page.locator('#TODO_ZASTAP_PRAWIDLOWYM_SELEKTOREM');
+    this.flashMessage = page.locator('#TODO_ZASTAP_PRAWIDLOWYM_SELEKTOREM');
   }
 
   async goto() {
     await this.page.goto('https://the-internet.herokuapp.com/login');
   }
 
-  async login(username: string, password: string) {
-    // TODO: Uzupełnij logikę logowania
-    await this.usernameInput.fill(username);
-    await this.passwordInput.fill(password);
-    await this.loginButton.click();
+  /**
+   * TODO dla kandydata:
+   * Uzupełnij metodę, która wypełni login, hasło i kliknie przycisk logowania.
+   */
+  async login(username: string, password: string): Promise<void> {
+    throw new Error('Metoda login() nie została jeszcze zaimplementowana!');
   }
 
-  async assertLoginSuccess() {
-    await expect(this.flashMessage).toContainText('You logged into a secure area!');
+  /**
+   * TODO dla kandydata:
+   * Uzupełnij asercję sprawdzającą, czy komunikat flash zawiera podany tekst.
+   */
+  async assertFlashMessageContains(expectedText: string): Promise<void> {
+    throw new Error('Metoda assertFlashMessageContains() nie została jeszcze zaimplementowana!');
   }
 }
