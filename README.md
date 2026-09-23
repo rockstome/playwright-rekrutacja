@@ -1,66 +1,78 @@
-# Playwright TypeScript Automation (Google Chrome)
+# 🎯 Playwright QA / SDET Recruitment Challenge
 
-Projekt automatyzacji testów E2E napisany w **TypeScript** przy użyciu **Playwright**, skonfigurowany pod markową przeglądarkę **Google Chrome** (`channel: 'chrome'`).
-
----
-
-## 🚀 Wymagania wstępne
-
-- [Node.js](https://nodejs.org/) (wersja 18+ lub nowsza)
-- Zainstalowana przeglądarka [Google Chrome](https://www.google.com/chrome/) (lub pobrana przez Playwright)
+Witaj w repozytorium rekrutacyjnym! Projekt zawiera zadania praktyczne z zakresu automatyzacji testów w **TypeScript** z wykorzystaniem **Playwright** i przeglądarki **Google Chrome**.
 
 ---
 
-## 📦 Instalacja
+## ⚡ Jak uruchomić to środowisko w 100% w przeglądarce?
 
-1. Pobierz zależności:
-   ```bash
-   npm install
-   ```
+Nie musisz instalować niczego na swoim komputerze (Node.js, Git ani przeglądarki)! Wybierz jedną z poniższych opcji:
 
-2. (Opcjonalnie) Pobierz przeglądarki Playwright / Chrome:
-   ```bash
-   npx playwright install chrome
-   ```
+### Opcja A: GitHub Codespaces (Zalecana)
 
----
+1. Kliknij poniższy przycisk (lub na stronie repozytorium: **Code** ➔ **Codespaces** ➔ **Create codespace on main**):
 
-## 🧪 Uruchamianie testów
+   [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new)
 
-- **Uruchomienie wszystkich testów w trybie headless:**
-  ```bash
-  npm test
-  ```
+2. Po kilku sekundach w przeglądarce otworzy się gotowe środowisko **VS Code w chmurze**. Wszystkie zależności, rozszerzenie Playwright oraz przeglądarka Google Chrome zainstalują się automatycznie!
 
-- **Uruchomienie testów z widocznym oknem przeglądarki (headed):**
-  ```bash
-  npm run test:headed
-  ```
+### Opcja B: Gitpod
 
-- **Interaktywny Playwright UI Mode:**
-  ```bash
-  npm run test:ui
-  ```
-
-- **Tryb debugowania (Playwright Inspector):**
-  ```bash
-  npm run test:debug
-  ```
-
-- **Podgląd ostatniego raportu HTML:**
-  ```bash
-  npm run test:report
-  ```
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/)
 
 ---
 
-## 📁 Struktura projektu
+## 🧪 Jak uruchamiać testy w przeglądarce (w Codespaces / VS Code)?
 
+Możesz uruchamiać testy na 2 sposoby:
+
+### 1. Przez interfejs graficzny (VS Code Test Explorer)
+* W lewym panelu VS Code kliknij ikonę **Test** (kolba laboratoryjna / Testing).
+* Zobaczysz listę zadań – kliknij zieloną strzałkę **▶** przy wybranym teście, aby go odpalić.
+* Możesz też klikać zieloną strzałkę **▶** bezpośrednio przy teście w pliku `.spec.ts`.
+
+### 2. Przez wbudowany terminal
+Otwórz terminal w Codespaces (`Ctrl + ~` lub menu *Terminal ➔ New Terminal*) i uruchom:
+
+```bash
+# Uruchomienie wszystkich testów
+npm test
+
+# Uruchomienie poszczególnych zadań
+npm run test:task1
+npm run test:task2
+npm run test:task3
+
+# Podgląd raportu HTML
+npm run test:report
 ```
-├── tests/                  # Katalog z plikami testów (*.spec.ts)
-│   └── example.spec.ts     # Przykładowy zestaw testów
-├── playwright.config.ts    # Konfiguracja Playwright (Google Chrome channel)
-├── tsconfig.json           # Konfiguracja TypeScript
-├── package.json            # Zależności i skrypty npm
-└── .gitignore              # Ignorowane pliki i raporty
+
+---
+
+## 📋 Lista zadań rekrutacyjnych
+
+| Zadanie | Plik | Opis |
+|---|---|---|
+| **Zadanie 1** | `tests/tasks/task1_basics.spec.ts` | Formularze, dobór dobrych lokatorów (`getByRole`, `getByPlaceholder`) i asercje |
+| **Zadanie 2** | `tests/tasks/task2_page_objects.spec.ts` + `src/pages/LoginPage.ts` | Refaktoryzacja i implementacja wzorca **Page Object Model (POM)** |
+| **Zadanie 3** | `tests/tasks/task3_api_mocking.spec.ts` | Przechwytywanie i mockowanie zapytań HTTP (`page.route()`) |
+
+---
+
+## 💻 Alternatywa: Uruchomienie lokalne na własnym komputerze
+
+Jeśli wolisz pracować lokalnie na swoim systemie:
+```bash
+# 1. Klonowanie repozytorium
+git clone <URL_REPO>
+cd <NAZWA_KATALOGU>
+
+# 2. Instalacja zależności
+npm install
+
+# 3. Instalacja przeglądarki Chrome
+npx playwright install chrome
+
+# 4. Uruchomienie testów
+npm test
 ```

@@ -1,0 +1,14 @@
+image: gitpod/workspace-node
+
+tasks:
+  - init: npm install
+    command: npx playwright install --with-deps chrome
+
+vscode:
+  extensions:
+    - ms-playwright.playwright
+    - esbenp.prettier-vscode
+
+ports:
+  - port: 9323
+    onOpen: notify

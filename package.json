@@ -1,9 +1,12 @@
 {
   "name": "playwright-rekrutacja",
   "version": "1.0.0",
-  "description": "Playwright TypeScript automated tests configured with Google Chrome branded browser",
+  "description": "Playwright TypeScript Recruitment Challenges (Google Chrome Brand)",
   "scripts": {
     "test": "playwright test",
+    "test:task1": "playwright test tests/tasks/task1_basics.spec.ts",
+    "test:task2": "playwright test tests/tasks/task2_page_objects.spec.ts",
+    "test:task3": "playwright test tests/tasks/task3_api_mocking.spec.ts",
     "test:headed": "playwright test --headed",
     "test:ui": "playwright test --ui",
     "test:debug": "playwright test --debug",
@@ -12,6 +15,7 @@
   "keywords": [
     "playwright",
     "typescript",
+    "recruitment",
     "automation",
     "chrome"
   ],
