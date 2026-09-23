@@ -1,6 +1,6 @@
 {
   "name": "Playwright QA Recruitment Workspace",
-  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+  "image": "mcr.microsoft.com/playwright:v1.51.0-noble",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -12,7 +12,7 @@
       }
     }
   },
-  "postCreateCommand": "npm install && npx playwright install --with-deps chrome",
+  "postCreateCommand": "npm install && npx playwright install chrome",
   "forwardPorts": [9323],
   "portsAttributes": {
     "9323": {
