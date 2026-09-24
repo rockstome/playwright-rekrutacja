@@ -21,5 +21,5 @@ test('Zadanie 1: Zweryfikuj tytuł strony głównej Playwright', async ({ page }
   await page.goto('https://playwright.dev/');
 
   // TODO dla kandydata: Popraw poniższy regex, aby test przeszedł pomyślnie
-  await expect(page).toHaveTitle(/Selenium Testing Framework/);
+  await expect(page).toHaveTitle(/playwright/);
 });
