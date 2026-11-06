@@ -1,0 +1,26 @@
+{
+  "name": "playwright-rekrutacja",
+  "version": "1.0.0",
+  "description": "Playwright TypeScript Recruitment Challenges (Google Chrome Brand)",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:ts": "playwright test tests/typescript",
+    "report": "playwright show-report",
+    "postinstall": "playwright install ffmpeg && playwright install chrome"
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "recruitment",
+    "automation",
+    "chrome"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.65.0",
+    "@types/node": "^22.13.10",
+    "typescript": "^5.8.2"
+  }
+}
